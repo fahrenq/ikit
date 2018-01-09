@@ -6,17 +6,18 @@ class InterfaceObject {
   }
 
   set objects(val) {
-    // this._objects named with underscore to indicate
-    // it's private and avoid conflicts with setter w/o underscore
+    // this._objects named with underscore to indicate that
+    // it's private and to avoid conflicts with setter method
     this._objects = val;
   }
 
-  // Instead of defining showInfo as class method, we'd
-  // better to place define it as 'getter' for this._objects,
-  // however, exam tasks says we should have it implemented a method
+  // Instead of defining showInfo as a method, we'd
+  // better to define it as 'getter' for this._objects,
+  // however, exam task says we should have it implemented as a method
   showInfo() {
-    // Didn't serialize objects somehow, since default object
-    // output looks like ClassName { prop1: val, prop2: val, ... }
+    // Didn't serialize objects, since default class instance
+    // output looks like ClassName { prop1: val, prop2: val, ... },
+    // which satisfies exam requirements.
     return this._objects;
   }
 }
