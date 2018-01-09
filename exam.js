@@ -40,6 +40,6 @@ const btn = new Button(10, 20, 'ChildButtonName', 'ButtonCaption');
 const le = new LineEdit(10, 20, 'ChildLineEditName', 'LineEditText');
 
 const io = new InterfaceObject(0, 0, 'ParentIOName');
-io.objects = [btn, le]
+io.objects = [btn, le];
 
 console.log(io.showInfo());
